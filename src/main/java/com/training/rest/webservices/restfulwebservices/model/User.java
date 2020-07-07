@@ -19,7 +19,7 @@ public class User {
 	
 	@Id
 	@GeneratedValue
-	private Integer Id;
+	private Integer id;
 	
 	@Size(min=2, message="Name should have at least 2 characters")
 	@ApiModelProperty(notes="Name should have at least 2 characters")
@@ -38,15 +38,15 @@ public class User {
 	
 	public User(Integer id, String name, Date birthDate) {
 		super();
-		Id = id;
+		id = id;
 		this.name = name;
 		this.birthDate = birthDate;
 	}
 	public Integer getId() {
-		return Id;
+		return id;
 	}
 	public void setId(Integer id) {
-		Id = id;
+		id = id;
 	}
 	public String getName() {
 		return name;
