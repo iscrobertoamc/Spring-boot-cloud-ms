@@ -38,7 +38,7 @@ public class User {
 	
 	public User(Integer id, String name, Date birthDate) {
 		super();
-		id = id;
+		this.id = id;
 		this.name = name;
 		this.birthDate = birthDate;
 	}
@@ -46,7 +46,7 @@ public class User {
 		return id;
 	}
 	public void setId(Integer id) {
-		id = id;
+		this.id = id;
 	}
 	public String getName() {
 		return name;
